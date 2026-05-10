@@ -13,3 +13,11 @@ binding = "ASSETS"
 [vars]
 NODE_ENV = "production"
 BUILD_TARGET = "cloudflare"
+
+# 可观测性
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[observability.traces]
+enabled = true
