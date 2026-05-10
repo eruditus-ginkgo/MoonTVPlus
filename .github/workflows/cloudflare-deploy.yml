@@ -65,8 +65,14 @@ jobs:
       - name: Build for Cloudflare
         run: pnpm run build:cloudflare
         env:
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
           UPSTASH_URL: ${{ secrets.UPSTASH_URL }}
           UPSTASH_TOKEN: ${{ secrets.UPSTASH_TOKEN }}
+          CRON_PASSWORD: ${{ secrets.CRON_PASSWORD }}
+          CRON_WAIT_FOR_COMPLETION: ${{ secrets.CRON_WAIT_FOR_COMPLETION }}
+          SITE_BASE: ${{ secrets.SITE_BASE }}
+          CONFIG_SUBSCRIPTION_URL: ${{ secrets.CONFIG_SUBSCRIPTION_URL }}
 
       - name: Run D1 Database Migrations
         env:
@@ -96,31 +102,16 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy .vercel/output/static --project-name=moontvplus
+          wranglerVersion: "4"
           secrets: |
             USERNAME
             PASSWORD
             UPSTASH_URL
             UPSTASH_TOKEN
-            # TMDB_API_KEY
-            # TMDB_PROXY
-            # TMDB_REVERSE_PROXY
-            # DANMAKU_API_BASE
-            # DANMAKU_API_TOKEN
-            # ANNOUNCEMENT
             CRON_PASSWORD
             CRON_WAIT_FOR_COMPLETION
             SITE_BASE
-            # REDIS_URL
-            # KVROCKS_URL
-            # INIT_CONFIG
             CONFIG_SUBSCRIPTION_URL
-            # ENABLE_TVBOX_SUBSCRIBE
-            # TVBOX_SUBSCRIBE_TOKEN
-            # WATCH_ROOM_ENABLED
-            # WATCH_ROOM_SERVER_TYPE
-            # WATCH_ROOM_EXTERNAL_SERVER_URL
-            # WATCH_ROOM_EXTERNAL_SERVER_AUTH
-            # D1_DATABASE_ID
         env:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
