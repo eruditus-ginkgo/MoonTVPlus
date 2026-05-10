@@ -64,6 +64,9 @@ jobs:
 
       - name: Build for Cloudflare
         run: pnpm run build:cloudflare
+        env:
+          UPSTASH_URL: ${{ secrets.UPSTASH_URL }}
+          UPSTASH_TOKEN: ${{ secrets.UPSTASH_TOKEN }}
 
       - name: Run D1 Database Migrations
         env:
