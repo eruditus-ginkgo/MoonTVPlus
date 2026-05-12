@@ -1,0 +1,26 @@
+version: 2
+updates:
+  # npm/pnpm 依赖版本更新
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    pull-request-branch-name:
+      separator: "/"
+    labels:
+      - "dependencies"
+      - "npm"
+    reviewers:
+      - "eruditus-ginkgo"
+
+  # GitHub Actions 工作流依赖更新
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "github-actions"
