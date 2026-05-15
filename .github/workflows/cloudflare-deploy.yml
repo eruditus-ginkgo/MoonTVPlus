@@ -63,7 +63,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build for Cloudflare
-        run: pnpm run build:cloudflare
+        run: pnpm run build:cloudflare --dangerouslyUseUnsupportedNextVersion
         env:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
@@ -96,7 +96,7 @@ jobs:
           pnpm dlx wrangler d1 migrations apply moontvplus --remote
           echo "✅ Migrations completed"
 
-      - name: Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
