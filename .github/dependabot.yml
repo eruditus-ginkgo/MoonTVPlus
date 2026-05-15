@@ -1,120 +1,152 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-    pull-request-branch-name:
-      separator: "/"
-    labels:
-      - "dependencies"
-      - "npm"
-    reviewers:
-      - "eruditus-ginkgo"
+    - package-ecosystem: "npm"
+      directory: "/"
+      schedule:
+          interval: "weekly"
 
-    groups:
-      core:
-        patterns:
-          - "next"
-          - "react"
-          - "react-dom"
-          - "typescript"
-          - "@types/react"
-          - "@types/react-dom"
-          - "@types/node"
+      commit-message:
+          prefix: "chore"
+          include: "scope"
 
-      styling:
-        patterns:
-          - "tailwindcss"
-          - "@tailwindcss/*"
-          - "postcss"
-          - "autoprefixer"
-          - "prettier"
-          - "prettier-*"
+      pull-request-branch-name:
+          separator: "/"
 
-      linting:
-        patterns:
-          - "eslint"
-          - "eslint-*"
-          - "@typescript-eslint/*"
-          - "eslint-config-*"
-          - "eslint-plugin-*"
+      labels:
+          - "dependencies"
+          - "npm"
 
-      video-player:
-        patterns:
-          - "vidstack"
-          - "@vidstack/*"
-          - "artplayer"
-          - "artplayer-*"
-          - "hls.js"
-          - "flv.js"
-          - "mux.js"
-          - "anime4k-webgpu"
+      reviewers:
+          - "eruditus-ginkgo"
 
-      backend:
-        patterns:
-          - "better-sqlite3"
-          - "@vercel/postgres"
-          - "@upstash/*"
-          - "redis"
-          - "node-fetch"
-          - "nodemailer"
-          - "@types/nodemailer"
-          - "@types/pg"
+      ignore:
+          - dependency-name: "next"
+            update-types: ["version-update:semver-major"]
 
-      ui-components:
-        patterns:
-          - "@headlessui/*"
-          - "@heroicons/*"
-          - "lucide-react"
-          - "framer-motion"
-          - "swiper"
-          - "react-icons"
+          - dependency-name: "react"
+            update-types: ["version-update:semver-major"]
 
-      utilities:
-        patterns:
-          - "clsx"
-          - "nanoid"
-          - "xml2js"
-          - "cheerio"
-          - "bs58"
-          - "@types/bs58"
-          - "crypto-js"
-          - "@types/crypto-js"
-          - "nprogress"
-          - "@types/nprogress"
-          - "he"
-          - "@types/he"
-          - "parse-torrent-name"
-          - "opencc-js"
-          - "server-only"
-          - "zod"
+          - dependency-name: "react-dom"
+            update-types: ["version-update:semver-major"]
 
-      testing:
-        patterns:
-          - "jest"
-          - "@testing-library/*"
-          - "@types/testing-library__jest-dom"
-          - "next-router-mock"
+          - dependency-name: "typescript"
+            update-types: ["version-update:semver-major"]
 
-      build-tools:
-        patterns:
-          - "@opennextjs/*"
-          - "vercel"
-          - "@svgr/*"
-          - "webpack-obfuscator"
+          - dependency-name: "@types/react"
+            update-types: ["version-update:semver-major"]
 
-      all-others:
-        patterns:
-          - "*"
+          - dependency-name: "@types/react-dom"
+            update-types: ["version-update:semver-major"]
 
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    labels:
-      - "dependencies"
-      - "github-actions"
+          - dependency-name: "@types/node"
+            update-types: ["version-update:semver-major"]
+
+          - dependency-name: "eslint"
+            update-types: ["version-update:semver-major"]
+
+          - dependency-name: "tailwindcss"
+            update-types: ["version-update:semver-major"]
+
+      groups:
+          core:
+              patterns:
+                  - "next"
+                  - "react"
+                  - "react-dom"
+                  - "typescript"
+                  - "@types/react"
+                  - "@types/react-dom"
+                  - "@types/node"
+
+          styling:
+              patterns:
+                  - "tailwindcss"
+                  - "@tailwindcss/*"
+                  - "postcss"
+                  - "autoprefixer"
+                  - "prettier"
+                  - "prettier-*"
+
+          linting:
+              patterns:
+                  - "eslint"
+                  - "eslint-*"
+                  - "@typescript-eslint/*"
+                  - "eslint-config-*"
+                  - "eslint-plugin-*"
+
+          video-player:
+              patterns:
+                  - "vidstack"
+                  - "@vidstack/*"
+                  - "artplayer"
+                  - "artplayer-*"
+                  - "hls.js"
+                  - "flv.js"
+                  - "mux.js"
+                  - "anime4k-webgpu"
+
+          backend:
+              patterns:
+                  - "better-sqlite3"
+                  - "@vercel/postgres"
+                  - "@upstash/*"
+                  - "redis"
+                  - "node-fetch"
+                  - "nodemailer"
+                  - "@types/nodemailer"
+                  - "@types/pg"
+
+          ui-components:
+              patterns:
+                  - "@headlessui/*"
+                  - "@heroicons/*"
+                  - "lucide-react"
+                  - "framer-motion"
+                  - "swiper"
+                  - "react-icons"
+
+          utilities:
+              patterns:
+                  - "clsx"
+                  - "nanoid"
+                  - "xml2js"
+                  - "cheerio"
+                  - "bs58"
+                  - "@types/bs58"
+                  - "crypto-js"
+                  - "@types/crypto-js"
+                  - "nprogress"
+                  - "@types/nprogress"
+                  - "he"
+                  - "@types/he"
+                  - "parse-torrent-name"
+                  - "opencc-js"
+                  - "server-only"
+                  - "zod"
+
+          testing:
+              patterns:
+                  - "jest"
+                  - "@testing-library/*"
+                  - "@types/testing-library__jest-dom"
+                  - "next-router-mock"
+
+          build-tools:
+              patterns:
+                  - "@opennextjs/*"
+                  - "vercel"
+                  - "@svgr/*"
+                  - "webpack-obfuscator"
+
+          all-others:
+              patterns:
+                  - "*"
+
+    - package-ecosystem: "github-actions"
+      directory: "/"
+      schedule:
+          interval: "weekly"
+      labels:
+          - "dependencies"
+          - "github-actions"
