@@ -100,7 +100,7 @@ importers:
         version: 14.2.35(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-pwa:
         specifier: ^5.6.0
-        version: 5.6.0(@babel/core@7.28.5)(@types/babel__core@7.20.5)(next@14.2.35(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(webpack@5.104.1(postcss@8.5.6))
+        version: 5.6.0(@babel/core@7.28.5)(@types/babel__core@7.20.5)(next@14.2.35(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(webpack@5.104.1(postcss@8.5.10))
       next-themes:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -224,7 +224,7 @@ importers:
         version: 5.62.0(eslint@8.57.1)(typescript@4.9.5)
       autoprefixer:
         specifier: ^10.4.20
-        version: 10.4.23(postcss@8.5.6)
+        version: 10.4.23(postcss@8.5.10)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -247,8 +247,8 @@ importers:
         specifier: ^0.9.0
         version: 0.9.13(next@14.2.35(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       postcss:
-        specifier: ^8.5.1
-        version: 8.5.6
+        specifier: ^8.5.10
+        version: 8.5.10
       prettier:
         specifier: ^2.8.8
         version: 2.8.8
@@ -266,7 +266,7 @@ importers:
         version: 50.4.10(rollup@2.80.0)(typescript@4.9.5)
       webpack-obfuscator:
         specifier: ^3.5.1
-        version: 3.6.0(javascript-obfuscator@5.1.0)(webpack@5.104.1(postcss@8.5.6))
+        version: 3.6.0(javascript-obfuscator@5.1.0)(webpack@5.104.1(postcss@8.5.10))
 
 packages:
 
@@ -6234,8 +6234,8 @@ packages:
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
-  nanoid@3.3.11:
-    resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
+  nanoid@3.3.12:
+    resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -6708,8 +6708,8 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.6:
-    resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
+  postcss@8.5.10:
+    resolution: {integrity: sha512-pMMHxBOZKFU6HgAZ4eyGnwXF/EvPGGqUr0MnZ5+99485wwW41kW91A4LOGxSHhgugZmSChL5AlElNdwlNgcnLQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   postgres-array@2.0.0:
@@ -12851,13 +12851,13 @@ snapshots:
       stubborn-fs: 2.0.0
       when-exit: 2.1.5
 
-  autoprefixer@10.4.23(postcss@8.5.6):
+  autoprefixer@10.4.23(postcss@8.5.10):
     dependencies:
       browserslist: 4.28.1
       caniuse-lite: 1.0.30001762
       fraction.js: 5.3.4
       picocolors: 1.1.1
-      postcss: 8.5.6
+      postcss: 8.5.10
       postcss-value-parser: 4.2.0
 
   available-typed-arrays@1.0.7:
@@ -12892,14 +12892,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-loader@8.4.1(@babel/core@7.28.5)(webpack@5.104.1(postcss@8.5.6)):
+  babel-loader@8.4.1(@babel/core@7.28.5)(webpack@5.104.1(postcss@8.5.10)):
     dependencies:
       '@babel/core': 7.28.5
       find-cache-dir: 3.3.2
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.104.1(postcss@8.5.6)
+      webpack: 5.104.1(postcss@8.5.10)
 
   babel-plugin-istanbul@6.1.1:
     dependencies:
@@ -13220,10 +13220,10 @@ snapshots:
       libphonenumber-js: 1.13.1
       validator: 13.15.35
 
-  clean-webpack-plugin@4.0.0(webpack@5.104.1(postcss@8.5.6)):
+  clean-webpack-plugin@4.0.0(webpack@5.104.1(postcss@8.5.10)):
     dependencies:
       del: 4.1.1
-      webpack: 5.104.1(postcss@8.5.6)
+      webpack: 5.104.1(postcss@8.5.10)
 
   client-only@0.0.1: {}
 
@@ -16254,7 +16254,7 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  nanoid@3.3.11: {}
+  nanoid@3.3.12: {}
 
   nanoid@5.1.6: {}
 
@@ -16272,14 +16272,14 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-pwa@5.6.0(@babel/core@7.28.5)(@types/babel__core@7.20.5)(next@14.2.35(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(webpack@5.104.1(postcss@8.5.6)):
+  next-pwa@5.6.0(@babel/core@7.28.5)(@types/babel__core@7.20.5)(next@14.2.35(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(webpack@5.104.1(postcss@8.5.10)):
     dependencies:
-      babel-loader: 8.4.1(@babel/core@7.28.5)(webpack@5.104.1(postcss@8.5.6))
-      clean-webpack-plugin: 4.0.0(webpack@5.104.1(postcss@8.5.6))
+      babel-loader: 8.4.1(@babel/core@7.28.5)(webpack@5.104.1(postcss@8.5.10))
+      clean-webpack-plugin: 4.0.0(webpack@5.104.1(postcss@8.5.10))
       globby: 11.1.0
       next: 14.2.35(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      terser-webpack-plugin: 5.3.16(webpack@5.104.1(postcss@8.5.6))
-      workbox-webpack-plugin: 6.6.0(@types/babel__core@7.20.5)(webpack@5.104.1(postcss@8.5.6))
+      terser-webpack-plugin: 5.3.16(webpack@5.104.1(postcss@8.5.10))
+      workbox-webpack-plugin: 6.6.0(@types/babel__core@7.20.5)(webpack@5.104.1(postcss@8.5.10))
       workbox-window: 6.6.0
     transitivePeerDependencies:
       - '@babel/core'
@@ -16637,30 +16637,30 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-import@15.1.0(postcss@8.5.6):
+  postcss-import@15.1.0(postcss@8.5.10):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.10
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.11
 
-  postcss-js@4.1.0(postcss@8.5.6):
+  postcss-js@4.1.0(postcss@8.5.10):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.5.6
+      postcss: 8.5.10
 
-  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.6)(tsx@4.21.0)(yaml@2.9.0):
+  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.10)(tsx@4.21.0)(yaml@2.9.0):
     dependencies:
       lilconfig: 3.1.3
     optionalDependencies:
       jiti: 1.21.7
-      postcss: 8.5.6
+      postcss: 8.5.10
       tsx: 4.21.0
       yaml: 2.9.0
 
-  postcss-nested@6.2.0(postcss@8.5.6):
+  postcss-nested@6.2.0(postcss@8.5.10):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.10
       postcss-selector-parser: 6.1.2
 
   postcss-selector-parser@6.0.10:
@@ -16677,13 +16677,13 @@ snapshots:
 
   postcss@8.4.31:
     dependencies:
-      nanoid: 3.3.11
+      nanoid: 3.3.12
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.5.6:
+  postcss@8.5.10:
     dependencies:
-      nanoid: 3.3.11
+      nanoid: 3.3.12
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -17564,11 +17564,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.5.6
-      postcss-import: 15.1.0(postcss@8.5.6)
-      postcss-js: 4.1.0(postcss@8.5.6)
-      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.6)(tsx@4.21.0)(yaml@2.9.0)
-      postcss-nested: 6.2.0(postcss@8.5.6)
+      postcss: 8.5.10
+      postcss-import: 15.1.0(postcss@8.5.10)
+      postcss-js: 4.1.0(postcss@8.5.10)
+      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.10)(tsx@4.21.0)(yaml@2.9.0)
+      postcss-nested: 6.2.0(postcss@8.5.10)
       postcss-selector-parser: 6.1.2
       resolve: 1.22.11
       sucrase: 3.35.1
@@ -17624,24 +17624,24 @@ snapshots:
       ansi-escapes: 4.3.2
       supports-hyperlinks: 2.3.0
 
-  terser-webpack-plugin@5.3.16(webpack@5.104.1(postcss@8.5.6)):
+  terser-webpack-plugin@5.3.16(webpack@5.104.1(postcss@8.5.10)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       serialize-javascript: 6.0.2
       terser: 5.44.1
-      webpack: 5.104.1(postcss@8.5.6)
+      webpack: 5.104.1(postcss@8.5.10)
 
-  terser-webpack-plugin@5.6.0(postcss@8.5.6)(webpack@5.104.1(postcss@8.5.6)):
+  terser-webpack-plugin@5.6.0(postcss@8.5.10)(webpack@5.104.1(postcss@8.5.10)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.47.1
-      webpack: 5.104.1(postcss@8.5.6)
+      webpack: 5.104.1(postcss@8.5.10)
     optionalDependencies:
-      postcss: 8.5.6
+      postcss: 8.5.10
 
   terser@5.16.9:
     dependencies:
@@ -18165,12 +18165,12 @@ snapshots:
 
   webidl-conversions@6.1.0: {}
 
-  webpack-obfuscator@3.6.0(javascript-obfuscator@5.1.0)(webpack@5.104.1(postcss@8.5.6)):
+  webpack-obfuscator@3.6.0(javascript-obfuscator@5.1.0)(webpack@5.104.1(postcss@8.5.10)):
     dependencies:
       javascript-obfuscator: 5.1.0
       multi-stage-sourcemap: 0.3.1
       multimatch: 5.0.0
-      webpack: 5.104.1(postcss@8.5.6)
+      webpack: 5.104.1(postcss@8.5.10)
 
   webpack-sources@1.4.3:
     dependencies:
@@ -18179,7 +18179,7 @@ snapshots:
 
   webpack-sources@3.4.1: {}
 
-  webpack@5.104.1(postcss@8.5.6):
+  webpack@5.104.1(postcss@8.5.10):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.9
@@ -18203,7 +18203,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
-      terser-webpack-plugin: 5.6.0(postcss@8.5.6)(webpack@5.104.1(postcss@8.5.6))
+      terser-webpack-plugin: 5.6.0(postcss@8.5.10)(webpack@5.104.1(postcss@8.5.10))
       watchpack: 2.5.1
       webpack-sources: 3.4.1
     transitivePeerDependencies:
@@ -18422,12 +18422,12 @@ snapshots:
 
   workbox-sw@6.6.0: {}
 
-  workbox-webpack-plugin@6.6.0(@types/babel__core@7.20.5)(webpack@5.104.1(postcss@8.5.6)):
+  workbox-webpack-plugin@6.6.0(@types/babel__core@7.20.5)(webpack@5.104.1(postcss@8.5.10)):
     dependencies:
       fast-json-stable-stringify: 2.1.0
       pretty-bytes: 5.6.0
       upath: 1.2.0
-      webpack: 5.104.1(postcss@8.5.6)
+      webpack: 5.104.1(postcss@8.5.10)
       webpack-sources: 1.4.3
       workbox-build: 6.6.0(@types/babel__core@7.20.5)
     transitivePeerDependencies:
