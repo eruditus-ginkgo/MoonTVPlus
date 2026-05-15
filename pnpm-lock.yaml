@@ -150,8 +150,8 @@ importers:
         specifier: ^4.8.1
         version: 4.8.3(bufferutil@4.1.0)
       swiper:
-        specifier: ^11.2.8
-        version: 11.2.10
+        specifier: ^12.1.2
+        version: 12.1.2
       tailwind-merge:
         specifier: ^2.6.0
         version: 2.6.0
@@ -7460,8 +7460,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  swiper@11.2.10:
-    resolution: {integrity: sha512-RMeVUUjTQH+6N3ckimK93oxz6Sn5la4aDlgPzB+rBrG/smPdCTicXyhxa+woIpopz+jewEloiEE3lKo1h9w2YQ==}
+  swiper@12.1.2:
+    resolution: {integrity: sha512-4gILrI3vXZqoZh71I1PALqukCFgk+gpOwe1tOvz5uE9kHtl2gTDzmYflYCwWvR4LOvCrJi6UEEU+gnuW5BtkgQ==}
     engines: {node: '>= 4.7.0'}
 
   symbol-tree@3.2.4:
@@ -17538,7 +17538,7 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
 
-  swiper@11.2.10: {}
+  swiper@12.1.2: {}
 
   symbol-tree@3.2.4: {}
 
