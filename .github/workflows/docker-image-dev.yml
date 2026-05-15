@@ -41,7 +41,7 @@ jobs:
           echo "PLATFORM_NAME=${{ matrix.platform }}" | sed 's|/|-|g' >> $GITHUB_ENV
 
       - name: Checkout source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # 新增步骤：根据分支动态设置镜像名称
       - name: Set image name based on branch
