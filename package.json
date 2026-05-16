@@ -50,7 +50,7 @@
     "he": "^1.2.0",
     "hls.js": "^1.6.10",
     "https-proxy-agent": "^7.0.6",
-    "lucide-react": "^0.438.0",
+    "lucide-react": "^1.16.0",
     "media-icons": "^1.1.5",
     "mux.js": "^6.3.0",
     "nanoid": "^5.1.11",
